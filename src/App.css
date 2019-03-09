@@ -1,33 +1,278 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+/*2 wrapper*/
+.wrapper {
   min-height: 100vh;
+  min-width: 1280px;
+}
+
+/*3 wrapper*/
+.wrapper-pt {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 0;
   display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  background: linear-gradient(to right,  rgba(167,167,167,1) 0%, rgba(204,204,204,1) 23%, rgba(206,206,206,1) 24%, rgba(208,208,208,1) 25%, rgba(207,207,207,1) 25%, rgba(217,217,217,1) 31%, rgba(216,216,216,1) 32%, rgba(218,218,218,1) 32%, rgba(218,218,218,1) 33%, rgba(220,220,220,1) 33%, rgba(220,220,220,1) 34%, rgba(222,222,222,1) 34%, rgba(224,224,224,1) 37%, rgba(226,226,226,1) 37%, rgba(232,232,232,1) 46%, rgba(234,234,234,1) 46%, rgba(234,234,234,1) 54%, rgba(232,232,232,1) 54%, rgba(228,228,228,1) 60%, rgba(220,220,220,1) 66%, rgba(221,221,221,1) 66%, rgba(219,219,219,1) 67%, rgba(219,219,219,1) 67%, rgba(217,217,217,1) 67%, rgba(217,217,217,1) 69%, rgba(215,215,215,1) 70%, rgba(213,213,213,1) 70%, rgba(214,214,214,1) 71%, rgba(207,207,207,1) 75%, rgba(180,180,180,1) 92%, rgba(178,178,178,1) 93%, rgba(176,176,176,1) 93%, rgba(177,177,177,1) 94%, rgba(167,167,167,1) 100%)
+  /*fill the space check up*/
+}
+
+/*4 wrapper*/
+.container {
+  min-width: 1123px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*center-div 5 wrapper*/
+.holder-pt--large {
+  max-width: 880px;
+  width: 100%;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+/*main-keyboard wrapper*/
+.keyboard-pt {
+  position: relative;
+  padding: 0 50px;
+}
+
+/* Circle Number Style*/
+
+.keyboard-pt .keyboard-row-small-pt {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.wrapper-pt .btn-number {
+  width: 55px !important;
+  height: 55px !important;
+  background-color: #fff !important;
+  color: #000;
+  border-radius: 50% !important;
+  border: none !important;
+  line-height: 50px;
+  margin: 0 2px  2px;
+  /* small bug here up margin*/
+}
+
+/*Lower keyboard letter symbols*/
+
+.wrapper-pt .btn-symbol {
+  width: 6%;
+  height: 30px;
+  border-radius: 4px;
+  background: #fff000;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+.keyboard-pt .keyboard-row-pt {
+  /* padding-left: 40%;
+  padding-top: 200px; */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  /* padding: 0 50px;
+  position: relative;
+  padding-top: 200px; */
+}
+
+.wrapper-pt .btn-letter {
+  width: 7%;
+  height: 40px;
+  border-radius: 6px;
+  background: #ffc000;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.wrapper-pt .btn-letter {
+  margin: 0 2px 4px;
+}
+
+.holder-pt .btn {
+  vertical-align: middle;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+
+/* Shift Button Styling*/
+.keyboard-pt .keyboard-action-left-pt {
+  left: 0;
+}
+
+.keyboard-pt .keyboard-action-pt {
+  position: absolute;
+  top: 85px;
+}
+
+.wrapper-pt .btn-action {
+  width: 60px;
+  height: 84px;
+  background: #ffc000;
+  font-size: 16px;
+}
+
+.holder-pt {
+  width: 920px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Footer Area Design
+--------------------------------------------------------------------------------
+*/
+
+.wrapper-pt .cols-pt {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 200px 40px 0;
+  padding-right: 190px;
+  align-items: center
+}
+
+.wrapper-pt .col-pt--fol2 {
+  max-width: 500px;
+  -webkit-box-flex: 0;
+  flex: 0 1 500px;
+}
+
+.wrapper-pt .col-pt {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-direction: normal;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+/*
+Input Area Design
+*/
+
+.wrapper-pt .progress-holder-pt {
+  position: relative;
+}
+
+.wrapper-pt .progress-pt--white {
+  background-color: #fff;
+}
+
+.wrapper-pt .progress-pt {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 106px;
+  border: 2px solid #b3b3b3;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.message-pt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  text-align: center;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transition: .3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Delete Button Style*/
+
+.wrapper-pt .btn--white {
+  min-height: 47px;
+  padding: 8px 20px;
+  background-color: #fff !important;
+}
+
+.wrapper-pt .btn-control {
+  max-width: 105px;
+  height: 47px;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #3e3e3e;
+  background: #ddd;
+}
+
+.wrapper-pt .col-pt--fol3 {
+  max-width: 221px;
+  /* padding: 0 129px; */
+  /* padding-right: 130px; */
+}
+
+
+.result {
+  height: 90px;
+  background-color: #bbb;
+  width: 100%;
+}
+
+.result p {
+  font-size: 40px;
+  margin: 5px
+}
+
+
+/* PROTOTYPE NAMING */
+
+.copyright--top__pt {
+  top: 30px;
+  right: 32px;
+  bottom: auto;
+  left: auto;
+}
+
+.copyright__pt {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: #808080;
+  font-weight: 550;
+  letter-spacing: 0.10em;
+  font-size: 18px;
 }
